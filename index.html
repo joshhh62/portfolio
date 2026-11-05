@@ -578,6 +578,7 @@ footer{border-top:1px solid var(--line);background:var(--bg-2);padding:56px 0 30
   .cube-stack{height:440px;transform:scale(.8);transform-origin:bottom center}
 }
 
+.proj-grid > .proj:not(.featured):last-child:nth-child(even){grid-column:1/-1}
 /* status pill + non-link CTA */
 .p-status{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 14px;border-radius:12px;border:1px solid var(--line);background:var(--glass);font-family:var(--fm);font-size:.72rem;color:var(--muted);white-space:nowrap}
 .p-status i{width:7px;height:7px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.18);animation:pstat 2s ease-in-out infinite}
@@ -682,7 +683,7 @@ footer{border-top:1px solid var(--line);background:var(--bg-2);padding:56px 0 30
 <section class="m-stats-sec">
   <div class="m-stats">
     <div class="m-stat reveal"><div class="n"><span class="count" data-target="9.37" data-dec="2">0</span></div><div class="l">Cumulative GPA</div></div>
-    <div class="m-stat reveal" style="--d:.06s"><div class="n"><span class="count" data-target="9" data-dec="0">0</span>+</div><div class="l">Projects Shipped</div></div>
+    <div class="m-stat reveal" style="--d:.06s"><div class="n"><span class="count" data-target="8" data-dec="0">0</span>+</div><div class="l">Projects Shipped</div></div>
     <div class="m-stat reveal" style="--d:.12s"><div class="n"><span class="count" data-target="65" data-dec="0">0</span></div><div class="l">Students Mentored</div></div>
   </div>
 </section>
@@ -957,25 +958,6 @@ footer{border-top:1px solid var(--line);background:var(--bg-2);padding:56px 0 30
         <div class="p-chips"><span class="tag">PyTorch</span><span class="tag">OpenCV</span><span class="tag">Streamlit</span><span class="tag">CNNs</span></div>
         <a class="p-cta" href="https://github.com/joshhh62/FSRCNN-Super-Resolution" target="_blank" rel="noopener">View Source <span class="arr">↗</span></a>
       </article>
-
-      <article class="proj reveal" data-cat="ml" style="--d:.06s">
-        <div class="p-top">
-          <div class="p-ico"><svg><use href="#i-shield"/></svg></div>
-          <div class="p-actions">
-            <a href="https://github.com/joshhh62" target="_blank" rel="noopener" aria-label="GitHub profile"><svg><use href="#i-gh"/></svg></a>
-          </div>
-        </div>
-        <div class="p-meta"><span>2025</span><span class="dot"></span><span>Predictive Safety System</span></div>
-        <h3>LifeGuardAI — Rockfall Prediction</h3>
-        <p>Predicts rockfall risk from geological, morphological and weather data — then warns people over SMS before it happens, with a heuristic fallback when the model abstains.</p>
-        <div class="p-metrics">
-          <div class="metric"><b>87%</b><span>Accuracy</span></div>
-          <div class="metric"><b>0.928</b><span>ROC-AUC</span></div>
-          <div class="metric"><b>&lt;1ms</b><span>Inference</span></div>
-        </div>
-        <div class="p-chips"><span class="tag">Scikit-learn</span><span class="tag">Random Forest</span><span class="tag">Streamlit</span><span class="tag">Plotly</span><span class="tag">Twilio</span></div>
-        <a class="p-cta" href="https://github.com/joshhh62" target="_blank" rel="noopener">View GitHub <span class="arr">↗</span></a>
-      </article>
     </div>
     <div class="proj-more reveal">
       <a class="btn btn-outline" href="https://github.com/joshhh62" target="_blank" rel="noopener">See everything on GitHub <span class="arr">↗</span></a>
@@ -1017,7 +999,7 @@ footer{border-top:1px solid var(--line);background:var(--bg-2);padding:56px 0 30
         <div class="skill-panel reveal" style="--d:.18s">
           <h3><span class="n">03</span>Frameworks, Tools &amp; Data</h3>
           <div class="chip-cloud">
-            <span class="tag">FastAPI</span><span class="tag">Flask</span><span class="tag">Express</span><span class="tag">Node.js</span><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Tailwind CSS</span><span class="tag">Flutter</span><span class="tag">Streamlit</span><span class="tag">PostgreSQL</span><span class="tag">PostGIS</span><span class="tag">SQLite</span><span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">Supabase</span><span class="tag">Docker</span><span class="tag">GitHub Actions</span><span class="tag">Vercel</span><span class="tag">Git</span><span class="tag">Twilio</span>
+            <span class="tag">FastAPI</span><span class="tag">Flask</span><span class="tag">Express</span><span class="tag">Node.js</span><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Tailwind CSS</span><span class="tag">Flutter</span><span class="tag">Streamlit</span><span class="tag">PostgreSQL</span><span class="tag">PostGIS</span><span class="tag">SQLite</span><span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">Supabase</span><span class="tag">Docker</span><span class="tag">GitHub Actions</span><span class="tag">Vercel</span><span class="tag">Git</span>
           </div>
         </div>
       </div>
